@@ -1,0 +1,142 @@
+.html body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    display:flex;
+    flex-flow: row wrap;
+    padding: 5%;
+}
+
+.main-title {
+position: relative;
+top: 5%;
+left: 15%;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 8vw;
+line-height: 113px;
+color: #000000;
+line-height: 120%;
+}
+
+
+.box-container {
+    position: relative;
+    left: 55%;
+    top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 40vh;
+    max-width: 70vh;
+    align-content: flex-end;
+    transform: skew(22.5deg);
+}
+
+.box{
+width: 15vh;
+height: 23vh;
+background: #000000;
+
+margin: 2vh;
+}
+
+.next-box{
+    width: 15vw;
+    height: 23vh;
+    background: #000000;
+    transform: skew(22.5deg);
+    margin: 2vh;
+    }
+
+@media  (max-width  : 500px){
+    body{
+        background-color: lightcoral;
+    }
+
+}
+
+
+.textbox{
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    padding: -10vh;
+
+}
+
+.hidden-textbox{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 2.5vw;
+    width: 60vw;
+    min-height: 80vh;
+}
+
+.textbox-container{
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 11fr 2fr;
+    grid-template-rows: 11fr 2fr;
+    margin: 20%;
+    overflow-y : hidden;
+
+}
+
+
+.hr-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    align-items: flex-start;
+    justify-content: center;
+    bottom:0%;
+}
+
+.hr-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0rem;
+    align-items: center;
+}
+
+.hr-row hr {margin: 0;
+    margin-left: -2rem;
+    height: 0.15em;
+    background: black;
+    padding: 0;
+    width: 3rem;
+    transform:rotate(45deg);
+
+}
+
+.hr-col hr {
+    margin: 0;
+    margin-bottom: -1.3rem;
+    height: 0.15rem;
+    background: black;
+    padding: 0;
+    width: 3rem;
+    transform:rotate(45deg);
+
+}
+
+
+.textbox-container:hover{
+ background-color: red;   
+}
