@@ -3,6 +3,7 @@ html body{
     width: 100%;
     height: 100%;
     font-size: 16px;
+    background-color: black;
 }
 
 .container {
@@ -23,7 +24,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 8vw;
 line-height: 113px;
-color: #000000;
+color: white;
 line-height: 120%;
 }
 
@@ -43,7 +44,7 @@ line-height: 120%;
 .box{
 width: 15vh;
 height: 23vh;
-background: #000000;
+background: white;
 
 margin: 2vh;
 }
@@ -61,13 +62,14 @@ margin: 2vh;
 
 .textbox{
     position: relative;
-    background-color: white;
+    background-color: black;
     width: 36rem;
     height: 26rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 1rem;
     text-align: left;
+    color: white;
 
 
 }
@@ -98,7 +100,7 @@ margin: 2vh;
 height: 0;
 border-style: solid;
 border-width: 6.5rem 0 0 7rem;
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent black;
 }
 
 .textbox-container:hover .edge-cover-right-top{
@@ -111,16 +113,16 @@ border-width: 6.5rem 0 0 7rem;
     z-index: 2;
     top:0;
     right: 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent black transparent transparent;
 }
 
 
 @keyframes shadow {
     0%{
-        background-image: white;
+        background-image: black;
     }
     100%{
-        background-image: repeating-linear-gradient(35.96deg, white , white 1rem, black 1rem, black 1.2rem);
+        background-image: repeating-linear-gradient(35.96deg, black , black 1rem, white 1rem, white 1.2rem);
     }
 }
 
@@ -139,13 +141,13 @@ border-width: 6.5rem 0 0 7rem;
     position: sticky;
     position: -webkit-sticky;
     transform: skew(80deg);
-    background-color: black;
+    background-color: white;
 }
 
 .shadow-text{
     top:-30rem;
     position: relative;
-    color:white;
+    color:black;
     width: 30rem;
     height: 80rem;
     margin-left: 30%;
@@ -173,12 +175,13 @@ border-width: 6.5rem 0 0 7rem;
     font-size: 2rem;
     text-align: left;
     margin: 0%;
+    color: white;
 }
 
 .next-box{
     width: 8rem;
     height: 10rem;
-    background: #000000;
+    background: white;
     transform: skew(22.5deg);
     right: 0%;
     }
@@ -230,7 +233,7 @@ border-width: 6.5rem 0 0 7rem;
     .box{
     width: 8vw;
     height: 8vh;
-    background: #000000;
+    background: white;
     margin: 1vh;
     }
     
@@ -245,31 +248,41 @@ border-width: 6.5rem 0 0 7rem;
     
     }
     
+    .textbox-container.long{
+        width: 85vw;
+        height: 210vw;
+        position: relative;
+        margin-left: -10%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    
+    }
     
     .textbox{
         position: relative;
-        background-color: white;
+        background-color: black;
         width: 80vw;
-        height: 165vw;
+        height: 200vw;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-size: 4vw;
         text-align: left;
-    
+        color:white;
     
     }
     
+
     .edge-cover-left-bottom{
-    display: hidden;
+    display: none;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 6.5rem 0 0 7rem;
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent black;
     }
     
     .edge-cover-right-top{
-        display: hidden;
+        display: none;
         position: absolute;
         width: 0;
         height: 0;
@@ -278,7 +291,7 @@ border-width: 6.5rem 0 0 7rem;
         z-index: 2;
         top:0;
         right: 0;
-        border-color: transparent white transparent transparent;
+        border-color: transparent black transparent transparent;
     }
     
     
@@ -291,21 +304,15 @@ border-width: 6.5rem 0 0 7rem;
         animation-fill-mode: forwards;
     }
 
-    .textbox-container:hover .edge-cover-left-bottom{
-        display: visible;
-    }
 
-    .textbox-container:hover .edge-cover-right-top{
-        display: visible;
-    }
     
     
     @keyframes shadow {
         0%{
-            background-image: white;
+            background-image: black;
         }
         100%{
-            background-image: repeating-linear-gradient(35.96deg, white , white 1rem, black 1rem, black 1.2rem);
+            background-image: repeating-linear-gradient(35.96deg, black , black 1rem, white 1rem, white 1.2rem);
         }
     }
 
@@ -317,6 +324,7 @@ border-width: 6.5rem 0 0 7rem;
     }
 
     .shadow-mask{
+        margin-top:30vh;
         top: 20;
         margin-left: 20vw;
         width: 100vw;
@@ -325,13 +333,13 @@ border-width: 6.5rem 0 0 7rem;
         position: -webkit-sticky;
         position: -moz-sticky;
         transform: skew(10deg);
-        background-color: black;
+        background-color: white;
     }
     
     .shadow-text{
         top: -150vh;
         position: relative;
-        color:white;
+        color:black;
         width: 70vw;
         height: 100vh;
         font-family: 'Montserrat', sans-serif;
@@ -359,12 +367,13 @@ border-width: 6.5rem 0 0 7rem;
         font-size: 2rem;
         text-align: left;
         margin: 0%;
+        color:white;
     }
     
     .next-box{
         width: 8rem;
         height: 10rem;
-        background: #000000;
+        background: white;
         transform: skew(22.5deg);
         right: 0%;
         }
